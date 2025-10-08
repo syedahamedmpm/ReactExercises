@@ -1,0 +1,27 @@
+useReducer is a React hook that’s an alternative to useState for managing state, especially when the state logic is complex or when multiple state values depend on each other.
+
+It works by taking in a reducer function and an initial state, and it returns the current state along with a dispatch function to trigger state updates.
+
+The reducer function takes the current state and an action, and based on the action type, it returns a new state. This makes state transitions predictable and easier to test.
+
+When to use:
+
+When state logic is complex (e.g., multiple fields in a form, shopping cart)
+
+When multiple values update together
+
+When state management would otherwise require too many useState calls
+
+When you want a Redux-like pattern without installing Redux
+
+Real-world use cases:
+
+Form handling (update fields, validation, reset)
+
+API calls (loading, success, error states)
+
+Authentication (login, logout, error handling)
+
+Shopping carts (add, remove, update items)
+
+Multi-step workflows (like a checkout process)
